@@ -81,13 +81,70 @@
     margin-bottom: 50px;
 }
 
+/* team-disscussion-section */
+.team-discuss-section {
+    max-width: 1340px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.team-discuss-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-discuss-content {
+    margin-left: 73px;
+    max-width: 520px;
+}
+
+.team-discuss-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.quick-list {
+    color: rgb(114, 114, 114);
+
+}
+
+.of-our {
+    color: rgb(19, 19, 19);
+}
+
+.feature {
+    color: rgb(255, 144, 14);
+}
+
+.team-discussion {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+
+
 /* Responsive media query */
 @media screen and (max-width:576px) {
+
+    .navigation-section,
+    .navigation-style,
+    .team-discuss-section {
+        flex-direction: column;
+    }
+
+    .team-discuss-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:576px) and(max-width:992px) {
 
     .navigation-section,
     .navigation-style {
         flex-direction: column;
     }
 }
-
-@media screen and (min-width:576px) and(max-width:992px) {}
